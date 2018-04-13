@@ -1,7 +1,7 @@
 language: node_js
-node_js: 8
+node_js:
+  - '8'
 before_script:
-  - npm install yarn -g
-  - cd server && yarn
-  - cd ..
-cache: yarn
+  - npm install
+script:
+  - yarn run test
