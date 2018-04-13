@@ -2,7 +2,7 @@
   <div class="ETaxInvoiceForm">
     <br>
       <h1>ใบกำกับภาษีอิเล็กทรอนิกส์</h1>
-      <seller-form :sellerFormProps="seller"></seller-form>
+      <seller-form :props="seller"></seller-form>
   </div>
 </template>
 
