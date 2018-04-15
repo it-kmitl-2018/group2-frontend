@@ -9,7 +9,7 @@ import router from './router';
 Vue.config.productionTip = false;
 Vue.use(VueAxios, axios);
 
-/* eslint-disable no-new */
+// eslint-disable-next-line
 new Vue({
   el: '#app',
   router,
