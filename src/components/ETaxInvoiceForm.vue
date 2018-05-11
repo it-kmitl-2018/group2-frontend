@@ -1,9 +1,14 @@
 <template>
   <div class="ETaxInvoiceForm">
-    <br>
-      <h1>ใบกำกับภาษีอิเล็กทรอนิกส์</h1>
-      <seller-form :seller="seller"></seller-form>
-      <payee-form :payee="payee"></payee-form>
+    <b-container>
+      <b-card title="ใบกำกับภาษีอิเล็กทรอนิกส์">
+        <hr>
+        <b-row>
+          <b-col><seller-form :seller="seller"></seller-form></b-col>
+          <b-col><payee-form :payee="payee"></payee-form></b-col>
+        </b-row>
+      </b-card>
+    </b-container>
   </div>
 </template>
 
@@ -28,3 +33,9 @@ export default {
   },
 };
 </script>
+<style scoped>
+.ETaxInvoiceForm {
+  margin-bottom: 3em;
+}
+</style>
+
