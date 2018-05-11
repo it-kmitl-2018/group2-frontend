@@ -12,6 +12,8 @@ import SellerForm from '@/components/forms/SellerForm';
 import SellerData from '@/data/Seller.data';
 import PayeeForm from '@/components/forms/PayeeForm';
 import PayeeData from '@/data/Payee.data';
+import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../../node_modules/bootstrap-vue/dist/bootstrap-vue.css';
 
 export default {
   data() {
