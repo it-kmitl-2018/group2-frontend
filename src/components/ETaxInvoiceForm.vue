@@ -8,6 +8,9 @@
           <b-col><payee-form :payee="payee"></payee-form></b-col>
           <b-col><payer-form :payer="payer"></payer-form></b-col>
         </b-row>
+        <b-row>
+          <b-col><buyer-form :buyer="buyer"></buyer-form></b-col>
+        </b-row>
       </b-card>
     </b-container>
   </div>
@@ -20,6 +23,8 @@ import PayeeForm from '@/components/forms/PayeeForm';
 import PayeeData from '@/data/Payee.data';
 import PayerForm from '@/components/forms/PayerForm';
 import PayerData from '@/data/Payer.data';
+import BuyerForm from '@/components/forms/BuyerForm';
+import BuyerData from '@/data/Buyer.data';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../../node_modules/bootstrap-vue/dist/bootstrap-vue.css';
 
@@ -29,12 +34,14 @@ export default {
       seller: SellerData.data,
       payee: PayeeData.data,
       payer: PayerData.data,
+      buyer: BuyerData.data,
     };
   },
   components: {
     SellerForm,
     PayeeForm,
     PayerForm,
+    BuyerForm,
   },
 };
 </script>
