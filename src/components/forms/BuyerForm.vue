@@ -1,12 +1,11 @@
 <template>
   <div>
-    <!--Payee-->
-    <h2>ผู้รับชำระเงิน</h2>
+    <h2>ผู้ซื้อ</h2>
     <b-form>
-       <party-form :party="payee.party"></party-form>
-      <tax-form :tax="payee.tax"></tax-form>
-      <contact-form :contact="payee.contact"></contact-form>
-      <address-form :address="payee.address"></address-form>
+      <party-form :party="buyer.party"></party-form>
+      <tax-form :tax="buyer.tax"></tax-form>
+      <contact-form :contact="buyer.contact"></contact-form>
+      <address-form :address="buyer.address"></address-form>
     </b-form>
   </div>
 </template>
@@ -18,7 +17,7 @@ import ContactForm from './party/Contact';
 import AddressForm from './party/Address';
 
 export default {
-  props: ['payee'],
+  props: ['buyer'],
   components: {
     PartyForm,
     TaxForm,

@@ -10,6 +10,7 @@
         </b-row>
         <b-row>
           <b-col><invoicer-form :invoicer="invoicer"></invoicer-form></b-col>
+          <b-col><buyer-form :buyer="buyer"></buyer-form></b-col>
         </b-row>
       </b-card>
     </b-container>
@@ -25,6 +26,8 @@ import PayerForm from '@/components/forms/PayerForm';
 import PayerData from '@/data/Payer.data';
 import InvoicerForm from '@/components/forms/InvoicerForm';
 import InvoicerData from '@/data/Invoicer.data';
+import BuyerForm from '@/components/forms/BuyerForm';
+import BuyerData from '@/data/Buyer.data';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../../node_modules/bootstrap-vue/dist/bootstrap-vue.css';
 
@@ -35,6 +38,7 @@ export default {
       payee: PayeeData.data,
       payer: PayerData.data,
       invoicer: InvoicerData.data,
+      buyer: BuyerData.data,
     };
   },
   components: {
@@ -42,6 +46,7 @@ export default {
     PayeeForm,
     PayerForm,
     InvoicerForm,
+    BuyerForm,
   },
 };
 </script>
