@@ -13,6 +13,9 @@
           <b-col><buyer-form :buyer="buyer"></buyer-form></b-col>
         </b-row>
       </b-card>
+      <router-link :to="{name: 'ETaxInvoiceConfirm'}">
+        <b-button variant="success">Submit</b-button>
+      </router-link>
     </b-container>
   </div>
 </template>
