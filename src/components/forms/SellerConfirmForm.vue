@@ -34,7 +34,7 @@
 <script>
 export default {
   props: ['sellerConfirm'],
-}
+};
 </script>
 
 <style>
