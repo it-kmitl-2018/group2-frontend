@@ -9,6 +9,7 @@
           <b-col><payer-form :payer="payer"></payer-form></b-col>
         </b-row>
         <b-row>
+          <b-col><invoicer-form :invoicer="invoicer"></invoicer-form></b-col>
           <b-col><buyer-form :buyer="buyer"></buyer-form></b-col>
         </b-row>
       </b-card>
@@ -23,6 +24,8 @@ import PayeeForm from '@/components/forms/PayeeForm';
 import PayeeData from '@/data/Payee.data';
 import PayerForm from '@/components/forms/PayerForm';
 import PayerData from '@/data/Payer.data';
+import InvoicerForm from '@/components/forms/InvoicerForm';
+import InvoicerData from '@/data/Invoicer.data';
 import BuyerForm from '@/components/forms/BuyerForm';
 import BuyerData from '@/data/Buyer.data';
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
@@ -34,6 +37,7 @@ export default {
       seller: SellerData.data,
       payee: PayeeData.data,
       payer: PayerData.data,
+      invoicer: InvoicerData.data,
       buyer: BuyerData.data,
     };
   },
@@ -41,6 +45,7 @@ export default {
     SellerForm,
     PayeeForm,
     PayerForm,
+    InvoicerForm,
     BuyerForm,
   },
 };
